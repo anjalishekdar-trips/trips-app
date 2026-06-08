@@ -301,7 +301,7 @@ const TRIP_DATA = {
       "id": "d4",
       "date": "Fri 3 Jul",
       "label": "DAY 4",
-      "title": "Orangerie + La Grande Epicerie + Marais + Buly",
+      "title": "Orangerie + La Grande Epicerie + Marais + Buly — Abhijeet's Birthday 🎂",
       "summary": "Monet's Water Lilies wrap around you at the Orangerie — after Giverny, you'll feel them differently. Then the finest food hall in Paris, followed by a golden-light afternoon in the Marais.",
       "items": [
         {
@@ -359,14 +359,16 @@ const TRIP_DATA = {
           "transit": "🚶 in Marais"
         },
         {
-          "time": "~20:00",
+          "time": "19:30",
           "emoji": "🍽️",
-          "title": "Dinner — ask Marriott concierge",
-          "address": "Paris — ask concierge for current favourite",
-          "notes": "Not tourist-facing. Ask the concierge the day before.",
-          "status": null,
+          "title": "Birthday Dinner — Miss Kô",
+          "address": "49-51 Av. George V, 75008 Paris",
+          "notes": "Table for 2. Confirmation #10500. Abhijeet's birthday dinner.",
+          "status": "confirmed",
           "category": "dining",
-          "transit": "🚶 or 🚕"
+          "transit": "🚕 15 min taxi",
+          "ref": "10500",
+          "phone": "01 53 67 84 60"
         }
       ]
     },
