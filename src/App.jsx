@@ -210,8 +210,8 @@ const TRIP_DATA = {
       "id": "d3",
       "date": "Thu 2 Jul",
       "label": "DAY 3",
-      "title": "Giverny Full Day — Abhijeet's Birthday 🎂",
-      "summary": "An early train out of Saint-Lazare, then two hours inside Monet's actual world — the flower garden, the Japanese bridge, the water lily pond. Back to Paris for a birthday dinner on the Left Bank.",
+      "title": "Giverny Full Day",
+      "summary": "An early train out of Saint-Lazare, then two hours inside Monet's actual world — the flower garden, the Japanese bridge, the water lily pond. Back to Paris for a celebratory dinner at Hestia on the Left Bank.",
       "items": [
         {
           "time": "08:14",
