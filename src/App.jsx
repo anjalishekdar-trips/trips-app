@@ -406,6 +406,16 @@ const TRIP_DATA = {
           "transit": "🚕 back toward hotel"
         },
         {
+          "time": "~16:00",
+          "emoji": "✦",
+          "title": "SACRED UNSTRUCTURED TIME",
+          "address": "Wherever Paris takes you",
+          "notes": "This window is intentionally empty. Do not fill it. Your favourite cafe, an accidental gallery, a hidden perfumery, a street you remember forever. France rewards permeability.",
+          "status": null,
+          "category": "culture",
+          "transit": "🚶 anywhere"
+        },
+        {
           "time": "19:30",
           "emoji": "🍽️",
           "title": "Dinner — Jenny",
@@ -415,16 +425,6 @@ const TRIP_DATA = {
           "category": "dining",
           "transit": "🏨 downstairs",
           "ref": "PARDT-5GWZRR3ENRCE"
-        },
-        {
-          "time": "Afternoon",
-          "emoji": "✦",
-          "title": "SACRED UNSTRUCTURED TIME",
-          "address": "Wherever Paris takes you",
-          "notes": "This window is intentionally empty. Do not fill it. Your favourite cafe, an accidental gallery, a hidden perfumery, a street you remember forever. France rewards permeability.",
-          "status": null,
-          "category": "culture",
-          "transit": "🚶 anywhere"
         }
       ]
     },
@@ -467,16 +467,6 @@ const TRIP_DATA = {
           "ref": "XT4QC8"
         },
         {
-          "time": "~20:30",
-          "emoji": "🍷",
-          "title": "First dinner in Bordeaux",
-          "address": "Saint-Pierre district, Bordeaux",
-          "notes": "Ask IC Bordeaux concierge for current favourite wine bar. Order Entre-Deux-Mers white and a village Pomerol.",
-          "status": null,
-          "category": "dining",
-          "transit": "🚶 walkable from hotel"
-        },
-        {
           "time": "~17:42",
           "emoji": "🏨",
           "title": "Arrive Bordeaux — check in",
@@ -496,6 +486,16 @@ const TRIP_DATA = {
           "status": null,
           "category": "culture",
           "transit": "🏨 in hotel"
+        },
+        {
+          "time": "~20:30",
+          "emoji": "🍷",
+          "title": "First dinner in Bordeaux",
+          "address": "Saint-Pierre district, Bordeaux",
+          "notes": "Ask IC Bordeaux concierge for current favourite wine bar. Order Entre-Deux-Mers white and a village Pomerol.",
+          "status": null,
+          "category": "dining",
+          "transit": "🚶 walkable from hotel"
         }
       ]
     },
@@ -563,9 +563,19 @@ const TRIP_DATA = {
       "id": "d9",
       "date": "Tue 7 Jul",
       "label": "DAY 8",
-      "title": "Free Bordeaux Morning + TGV to Paris + Soho House",
-      "summary": "A slow last Bordeaux morning. TGV back to Paris at 14:46, arriving Montparnasse at 17:16. Final night at Soho House.",
+      "title": "TGV to Paris + Soho House + Saint-Germain",
+      "summary": "A free Bordeaux morning — oysters, the Miroir d'Eau, limestone streets. TGV back to Paris at 14:46, arriving Montparnasse 17:16. Check into Soho House, then an evening in Saint-Germain: La Grande Épicerie for last provisions, a terrace glass, dinner in the 6th.",
       "items": [
+        {
+          "time": "~09:00",
+          "emoji": "✦",
+          "title": "Free morning — follow your instinct",
+          "address": "Bordeaux",
+          "notes": "No franticness required. Marché des Capucins for oysters, Crémant de Bordeaux at a café, a slow walk along the Garonne. Or Abhijeet can investigate Smith Haut Lafitte. Either way — no rushing.",
+          "status": null,
+          "category": "culture",
+          "transit": "🚶 anywhere"
+        },
         {
           "time": "~12:00",
           "emoji": "🥘",
@@ -599,24 +609,30 @@ const TRIP_DATA = {
           "ref": "34759SG135930"
         },
         {
-          "time": "~20:30",
-          "emoji": "🍽️",
-          "title": "Last dinner — Paris",
-          "address": "Soho House Paris restaurant or nearby",
-          "notes": "Soho House has a good restaurant — or ask the team for a recommendation nearby.",
-          "status": null,
-          "category": "dining",
-          "transit": "🚶 or 🏨 at hotel"
+          "time": "~20:00",
+          "emoji": "🛍️",
+          "title": "La Grande Épicerie de Paris",
+          "address": "38 Rue de Sèvres, 75007 Paris",
+          "notes": "Last provisions run. Lavender syrup, summer preserves, artisan chocolate, anything you didn't get the first time. Allow 45 mins. VAT refund over EUR 100.",
+          "status": "walkin",
+          "transit": "🚕 15 min taxi from Soho House"
         },
         {
-          "time": "Morning",
-          "emoji": "✦",
-          "title": "Free morning — follow your instinct",
-          "address": "Bordeaux",
-          "notes": "No franticness required. Marché des Capucins for oysters, Crémant de Bordeaux at a café, a slow walk along the Garonne. Or Abhijeet can investigate Smith Haut Lafitte. Either way — no rushing.",
-          "status": null,
-          "category": "culture",
-          "transit": "🚶 anywhere"
+          "time": "~21:00",
+          "emoji": "🚶",
+          "title": "Saint-Germain evening wander",
+          "address": "Boulevard Saint-Germain, 75006",
+          "notes": "Last Paris evening. Walk the boulevard, find a terrace, order a final glass of something white and Burgundian.",
+          "transit": "🚶 from Épicerie"
+        },
+        {
+          "time": "~21:30",
+          "emoji": "🍽️",
+          "title": "Dinner — Saint-Germain, ask Soho House",
+          "address": "75006 Paris",
+          "notes": "Ask Soho House team for their current recommendation in the 6th. Options worth considering: Semilla (vegetable-forward, exceptional wine list, 54 Rue de Seine), Baillotte (modern French, chef Satoshi Amitsu's pâté en croûte is unmissable, 18 Rue Grégoire de Tours), Colvert (Michelin-pedigree chef, modern bistro, 10 Rue Clément), Chez Dumonet/Joséphine (19th century brasserie, duck confit, candlelit — note 25€ cancellation policy).",
+          "status": "walkin",
+          "transit": "🚶 in Saint-Germain"
         }
       ]
     },
