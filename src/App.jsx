@@ -432,8 +432,8 @@ const TRIP_DATA = {
       "id": "d6",
       "date": "Sun 5 Jul",
       "label": "DAY 6",
-      "title": "Last Paris Morning + TGV South to Bordeaux",
-      "summary": "A gentle last Paris morning — VAT paperwork, last chocolates three minutes from the hotel. Then the TGV south, first class, arriving Bordeaux at 17:42.",
+      "title": "Last Paris Morning + TGV to Bordeaux",
+      "summary": "A gentle last Paris morning — VAT paperwork, last chocolates three minutes from the hotel. The TGV south in the afternoon, first class, arriving Bordeaux at 17:42. Rooftop aperitif as the limestone city turns gold.",
       "items": [
         {
           "time": "~11:00",
@@ -475,16 +475,7 @@ const TRIP_DATA = {
           "status": null,
           "category": "dining",
           "transit": "🚶 walkable from hotel"
-        }
-      ]
-    },
-    {
-      "id": "d7",
-      "date": "Sun 5 Jul",
-      "label": "DAY 7",
-      "title": "Arrive Bordeaux — Rooftop Aperitif",
-      "summary": "Arrive Bordeaux. Limestone city, 18th-century facades, rooftop aperitif as the light goes golden. Dinner in the Saint-Pierre district.",
-      "items": [
+        },
         {
           "time": "~17:42",
           "emoji": "🏨",
@@ -511,7 +502,7 @@ const TRIP_DATA = {
     {
       "id": "d8",
       "date": "Mon 6 Jul",
-      "label": "DAY 8",
+      "label": "DAY 7",
       "title": "Château Pape Clément + Brasserie Le Bordeaux",
       "summary": "A free morning at Bordeaux's pace — oysters at the covered market, the Miroir d'Eau. Then Château Pape Clément in the afternoon: one of France's oldest estates, founded 1299. Two-Michelin-star dinner at the hotel.",
       "items": [
@@ -571,7 +562,7 @@ const TRIP_DATA = {
     {
       "id": "d9",
       "date": "Tue 7 Jul",
-      "label": "DAY 9",
+      "label": "DAY 8",
       "title": "Free Bordeaux Morning + TGV to Paris + Soho House",
       "summary": "A slow last Bordeaux morning. TGV back to Paris at 14:46, arriving Montparnasse at 17:16. Final night at Soho House.",
       "items": [
@@ -632,7 +623,7 @@ const TRIP_DATA = {
     {
       "id": "d10",
       "date": "Wed 8 Jul",
-      "label": "DAY 10",
+      "label": "DAY 9",
       "title": "Fly Home",
       "summary": "Early taxi to CDG. UA56 departs 09:45, home by noon Newark time.",
       "items": [
