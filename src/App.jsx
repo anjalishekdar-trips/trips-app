@@ -989,6 +989,133 @@ const TRIP_DATA = {
         }
       ]
     }
+  ],
+  "shopping": [
+    {
+      "location": "La Grande Épicerie de Paris",
+      "address": "38 Rue de Sèvres, 75007 Paris",
+      "emoji": "🛍️",
+      "note": "Visit twice — Day 4 after Orangerie, and Day 8 evening before Saint-Germain. VAT refund over €100.",
+      "items": [
+        {
+          "name": "Sablés Basques au Piment d'Espelette",
+          "notes": "Savoury shortbread with Espelette chili and fleur de sel. Look for Maison Arostéguy from Biarritz — the definitive version.",
+          "category": "🌶️ Basque"
+        },
+        {
+          "name": "Purée de Piment d'Espelette",
+          "notes": "Espelette pepper paste. Goes into everything, keeps well. Warm fruity heat, nothing like regular chili.",
+          "category": "🌶️ Basque"
+        },
+        {
+          "name": "Fleur de Sel de Guérande",
+          "notes": "The real thing, from Brittany. Ceramic pot. Nothing else compares.",
+          "category": "🧂 Pantry"
+        },
+        {
+          "name": "Confit de Canard",
+          "notes": "Duck confit in a jar. The southwest in a tin. Bring at least two.",
+          "category": "🦆 Southwest"
+        },
+        {
+          "name": "Crème de Marrons de l'Ardèche",
+          "notes": "Chestnut cream. Clément Faugier brand. Extraordinary on everything — yogurt, toast, crêpes.",
+          "category": "🌰 Pantry"
+        },
+        {
+          "name": "Lavender Syrup",
+          "notes": "Provence in a bottle. For sparkling water, cocktails, desserts.",
+          "category": "💜 Provence"
+        },
+        {
+          "name": "Artisan Chocolate",
+          "notes": "Pick up a selection of single-origin bars. Compare with Chapon.",
+          "category": "🍫 Sweet"
+        },
+        {
+          "name": "Summer Preserves",
+          "notes": "Whatever is seasonal — fig, apricot, cherry. French confiture at this level is incomparable.",
+          "category": "🍑 Sweet"
+        }
+      ]
+    },
+    {
+      "location": "Chapon Chocolaterie",
+      "address": "34 Rue Saint-Sulpice, 75006 Paris",
+      "emoji": "🍫",
+      "note": "Also buy bars to take home. Single-origin, no additives.",
+      "items": [
+        {
+          "name": "Uganda 75% bar",
+          "notes": "Rich, deep flavour with fruit notes. Beautiful packaging.",
+          "category": "🍫 Chocolate"
+        },
+        {
+          "name": "Philippines 75% bar",
+          "notes": "Earthy, complex. One of Chapon's most distinctive origins.",
+          "category": "🍫 Chocolate"
+        },
+        {
+          "name": "Homemade Marshmallows",
+          "notes": "Nothing like commercial versions. Pick up a small box.",
+          "category": "🍬 Sweet"
+        }
+      ]
+    },
+    {
+      "location": "Guerlain Flagship",
+      "address": "68 Ave des Champs-Élysées, 75008 Paris",
+      "emoji": "🌹",
+      "note": "VAT refund form. Paris-exclusive fragrances only available here. Allow 1 hour.",
+      "items": [
+        {
+          "name": "Paris-exclusive fragrance",
+          "notes": "Ask the consultant what is only available at this location — not in duty free, not online.",
+          "category": "🌸 Fragrance"
+        },
+        {
+          "name": "Engraved bottle",
+          "notes": "Bottle engraving service available in-store. A meaningful keepsake.",
+          "category": "🌸 Fragrance"
+        }
+      ]
+    },
+    {
+      "location": "La Maison du Chocolat",
+      "address": "52 Ave des Champs-Élysées, 75008 Paris",
+      "emoji": "🍫",
+      "note": "3 min walk from Marriott. Last stop on Day 6 morning before TGV.",
+      "items": [
+        {
+          "name": "Ganache selection box",
+          "notes": "Their signature. Dark chocolate ganaches with fresh cream — shelf life is short, eat within 2 weeks.",
+          "category": "🍫 Chocolate"
+        },
+        {
+          "name": "Macarons au chocolat",
+          "notes": "If in season. Different from Ladurée — more serious, less sweet.",
+          "category": "🍬 Sweet"
+        }
+      ]
+    },
+    {
+      "location": "Château Pape Clément",
+      "address": "216 Ave du Dr Nancel-Penard, 33600 Pessac, Bordeaux",
+      "emoji": "🍷",
+      "note": "Buy at the château — wines at this level are rarely exported at these prices.",
+      "items": [
+        {
+          "name": "Blanc de Pape Clément",
+          "notes": "Perfumed, almost never exported. The white is the discovery — buy at least two bottles.",
+          "category": "🍷 Wine"
+        },
+        {
+          "name": "Pape Clément Rouge",
+          "notes": "Classic Pessac-Léognan. Take the vintage they recommend from the current release.",
+          "category": "🍷 Wine"
+        }
+      ]
+    }
   ]
 };
 
@@ -1188,6 +1315,7 @@ const NAV_TABS = [
   { id: "hotels",      label: "Hotels" },
   { id: "flights",     label: "Flights" },
   { id: "restaurants", label: "Restaurants" },
+  { id: "shopping",    label: "Shopping" },
   { id: "contacts",    label: "Contacts" },
 ];
 
@@ -1272,6 +1400,74 @@ function RestaurantsPanel({ trip }) {
                     </div>
                   </div>
                 )}
+              </div>
+            );
+          })}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function ShoppingPanel({ trip }) {
+  const [openIdx, setOpenIdx] = useState(null);
+  return (
+    <div style={{ padding: "16px 0" }}>
+      {(trip.shopping || []).map((store, si) => (
+        <div key={si} style={{ marginBottom: 24 }}>
+          <div style={{
+            background: "linear-gradient(135deg, #1B2A4A 0%, #243860 100%)",
+            borderRadius: 10, padding: "14px 16px", marginBottom: 10,
+          }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <span style={{ fontSize: 20 }}>{store.emoji}</span>
+              <div>
+                <div style={{ fontSize: 14, fontWeight: 700, color: "#fff", fontFamily: "'Playfair Display', Georgia, serif" }}>
+                  {store.name || store.location}
+                </div>
+                <div style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", fontFamily: "Georgia, serif", fontStyle: "italic", marginTop: 2 }}>
+                  {store.address}
+                </div>
+              </div>
+            </div>
+            {store.note && (
+              <div style={{ fontSize: 12, color: "rgba(184,134,11,0.9)", fontFamily: "Georgia, serif", marginTop: 8, lineHeight: 1.5 }}>
+                {store.note}
+              </div>
+            )}
+          </div>
+          {store.items.map((item, ii) => {
+            const key = `${si}-${ii}`;
+            const isOpen = openIdx === key;
+            return (
+              <div
+                key={ii}
+                onClick={() => setOpenIdx(isOpen ? null : key)}
+                style={{
+                  background: isOpen ? "#fffdf7" : "#fff",
+                  border: `1px solid ${isOpen ? "#B8860B" : "#e8e0d0"}`,
+                  borderRadius: 8, padding: "10px 14px",
+                  marginBottom: 6, cursor: "pointer",
+                  transition: "all 0.15s ease",
+                  display: "flex", alignItems: "flex-start", gap: 10,
+                }}
+              >
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+                    <span style={{ fontSize: 10, color: "#B8860B", fontWeight: 700, fontFamily: "Georgia, serif" }}>
+                      {item.category}
+                    </span>
+                    <span style={{ fontSize: 13, fontWeight: 700, color: "#1B2A4A", fontFamily: "'Playfair Display', Georgia, serif" }}>
+                      {item.name}
+                    </span>
+                  </div>
+                  {isOpen && item.notes && (
+                    <div style={{ fontSize: 13, color: "#333", lineHeight: 1.65, fontFamily: "Georgia, serif", marginTop: 8 }}>
+                      {item.notes}
+                    </div>
+                  )}
+                </div>
+                <span style={{ color: "#ccc", fontSize: 10, marginTop: 2, flexShrink: 0 }}>{isOpen ? "▲" : "▼"}</span>
               </div>
             );
           })}
@@ -1521,6 +1717,7 @@ function TripDetail({ trip, onBack }) {
         {activeTab === "hotels"      && <HotelsPanel trip={trip} />}
         {activeTab === "flights"     && <FlightsPanel trip={trip} />}
         {activeTab === "restaurants" && <RestaurantsPanel trip={trip} />}
+        {activeTab === "shopping"    && <ShoppingPanel trip={trip} />}
         {activeTab === "contacts"    && <ContactsPanel trip={trip} />}
         {activeTab === "itinerary"   && <DayView day={trip.days[activeDay]} />}
       </div>
