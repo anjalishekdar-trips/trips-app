@@ -609,7 +609,7 @@ const TRIP_DATA = {
           "ref": "34759SG135930"
         },
         {
-          "time": "~20:00",
+          "time": "~19:30",
           "emoji": "🛍️",
           "title": "La Grande Épicerie de Paris",
           "address": "38 Rue de Sèvres, 75007 Paris",
@@ -618,7 +618,7 @@ const TRIP_DATA = {
           "transit": "🚕 15 min taxi from Soho House"
         },
         {
-          "time": "~21:00",
+          "time": "~20:30",
           "emoji": "🚶",
           "title": "Saint-Germain evening wander",
           "address": "Boulevard Saint-Germain, 75006",
@@ -628,11 +628,11 @@ const TRIP_DATA = {
         {
           "time": "~21:30",
           "emoji": "🍽️",
-          "title": "Dinner — Saint-Germain, ask Soho House",
-          "address": "75006 Paris",
-          "notes": "Ask Soho House team for their current recommendation in the 6th. Options worth considering: Semilla (vegetable-forward, exceptional wine list, 54 Rue de Seine), Baillotte (modern French, chef Satoshi Amitsu's pâté en croûte is unmissable, 18 Rue Grégoire de Tours), Colvert (Michelin-pedigree chef, modern bistro, 10 Rue Clément), Chez Dumonet/Joséphine (19th century brasserie, duck confit, candlelit — note 25€ cancellation policy).",
+          "title": "Dinner — Soho House Paris",
+          "address": "21 Rue Jean Goujon, 75008 Paris",
+          "notes": "Back at the house for a last dinner. Classic French menu — Entrecôte, Côte de Boeuf to share, South West French cooking by chef William Pradeleix. Kitchen open late. No taxi, no reservation needed.",
           "status": "walkin",
-          "transit": "🚶 in Saint-Germain"
+          "transit": "🏨 at hotel"
         }
       ]
     },
@@ -806,6 +806,188 @@ const TRIP_DATA = {
       "phone": null,
       "category": "hotel",
       "note": "Ref 34759SG135930 — Jul 7–8. Check-in after 15:00."
+    }
+  ],
+  "restaurants": [
+    {
+      "location": "Paris — Saint-Germain / 6th",
+      "emoji": "🗼",
+      "places": [
+        {
+          "name": "Didon",
+          "address": "8 Rue du Dragon, 75006",
+          "phone": "+33 1 45 48 00 00",
+          "cuisine": "Charcoal-fired bistronomie",
+          "notes": "Lebanese-born owners, menu by two-Michelin-star chef Michel Portos. Creative sharing plates, exceptional wine list by Stéphane Derenoncourt. Intimate, romantic, serious food.",
+          "status": "walkin",
+          "closedOn": ""
+        },
+        {
+          "name": "Little Breizh",
+          "address": "11 Rue Grégoire de Tours, 75006",
+          "phone": "+33 1 43 54 60 74",
+          "cuisine": "Crêperie bretonne",
+          "notes": "20-year institution, consistently named best crêperie in Paris. Buckwheat galettes, sweet crêpes, Breton cider. Dessert crêpe with dark chocolate, salted caramel, ice cream and Chantilly is unmissable. Crepe Suzette flambéed tableside.",
+          "status": "walkin",
+          "closedOn": "Closed Sunday & Monday"
+        },
+        {
+          "name": "Chapon Chocolaterie",
+          "address": "34 Rue Saint-Sulpice, 75006",
+          "phone": "+33 1 42 39 57 92",
+          "cuisine": "Chocolaterie — mousse bar",
+          "notes": "Bar à Mousse aux Chocolats — single-origin mousses in a paper cone, 5 intensities. Founded by Patrice Chapon, former ice cream maker for Buckingham Palace. Go before 4pm — mousse sells out. Sit in the square in front of Saint-Sulpice. €7-13.",
+          "status": "walkin",
+          "closedOn": ""
+        },
+        {
+          "name": "Semilla",
+          "address": "54 Rue de Seine, 75006",
+          "phone": "+33 1 43 54 34 50",
+          "cuisine": "Modern French, vegetable-forward",
+          "notes": "One of the best wine lists in Saint-Germain. Vegetable plates are where the kitchen shines. Open Wed–Sun for dinner, lunch on weekends.",
+          "status": "walkin",
+          "closedOn": "Closed Monday & Tuesday"
+        },
+        {
+          "name": "Baillotte",
+          "address": "18 Rue Grégoire de Tours, 75006",
+          "phone": "+33 1 43 26 03 65",
+          "cuisine": "Modern French",
+          "notes": "Chef Satoshi Amitsu's pâté en croûte is genuinely one of the best around. Not a tasting menu — à la carte, which is rare at this level. Good for vegetarians. Open Tuesday–Sunday.",
+          "status": "walkin",
+          "closedOn": "Closed Monday"
+        },
+        {
+          "name": "Colvert",
+          "address": "10 Rue Clément, 75006",
+          "phone": "",
+          "cuisine": "Modern bistro",
+          "notes": "Michelin-pedigree chef. Creative French bistro — scallops with Jerusalem artichoke two ways, pork with jalapeño. Serious cooking without formality.",
+          "status": "walkin",
+          "closedOn": ""
+        }
+      ]
+    },
+    {
+      "location": "Paris — 7th (near Soho House & Épicerie)",
+      "emoji": "🗼",
+      "places": [
+        {
+          "name": "RoseMarie",
+          "address": "149 Rue de l'Université, 75007",
+          "phone": "+33 1 45 51 83 45",
+          "cuisine": "Classic French bistro",
+          "notes": "Michelin Bib Gourmand 2026. Daily blackboard menu — chocolate mousse a regular fixture. Duck, salmon tartare, scallops. ~€30 lunch, €40 dinner. Call ahead to reserve — popular enough to fill, no online booking.",
+          "status": "book",
+          "closedOn": "Closed Saturday & Sunday"
+        }
+      ]
+    },
+    {
+      "location": "Paris — Latin Quarter / 5th",
+      "emoji": "🗼",
+      "places": [
+        {
+          "name": "Hébé",
+          "address": "15 Rue Frédéric Sauton, 75005",
+          "phone": "+33 1 46 34 08 91",
+          "cuisine": "Modern French / Mediterranean",
+          "notes": "Sister restaurant to Didon, same owners. Creative tasting menu, May 2026 reviews outstanding. Chocolate ice cream praised. Small and cozy, friendly English-speaking staff. Michelin-listed.",
+          "status": "walkin",
+          "closedOn": "Closed Monday"
+        }
+      ]
+    },
+    {
+      "location": "Paris — 2nd (near Opéra / Palais Royal)",
+      "emoji": "🗼",
+      "places": [
+        {
+          "name": "Vaudeville",
+          "address": "29 Rue Vivienne, 75002",
+          "phone": "+33 1 40 20 04 62",
+          "cuisine": "Classic Parisian brasserie",
+          "notes": "Art deco interior opposite the Palais Brongniart. Seafood platters, all the brasserie codes. Open daily including Sunday, continuous service. Lunch from €22. More of a setting experience — beautiful room, reliable food.",
+          "status": "walkin",
+          "closedOn": "Open daily"
+        }
+      ]
+    },
+    {
+      "location": "Giverny",
+      "emoji": "🌸",
+      "places": [
+        {
+          "name": "Le Jardin des Plumes",
+          "address": "1 Rue du Milieu, 27620 Giverny",
+          "phone": "+33 2 32 54 26 35",
+          "cuisine": "One Michelin star",
+          "notes": "Chef David Gallienne in a 1912 Norman manor house surrounded by gardens. Seasonal, refined, elegant but unpretentious. Best restaurant in Giverny by a distance. Book ahead — fills quickly.",
+          "status": "book",
+          "closedOn": ""
+        },
+        {
+          "name": "Les Nymphéas",
+          "address": "Rue Claude Monet, 27620 Giverny",
+          "phone": "+33 2 32 21 20 31",
+          "cuisine": "Norman terrace restaurant",
+          "notes": "Flower-filled setting overlooking the Fondation Monet. Local Norman produce. Perfect for lunch after the gardens — convenient and charming.",
+          "status": "walkin",
+          "closedOn": ""
+        },
+        {
+          "name": "La Guingette",
+          "address": "Giverny village",
+          "phone": "",
+          "cuisine": "Casual terrace bistro",
+          "notes": "Hidden from the touristy strip, serene setting, seasonal vegetables and fish. Closes between lunch and dinner — arrive before 2:30pm. Praised by locals and visitors alike.",
+          "status": "walkin",
+          "closedOn": "Closed between 2:30–7pm"
+        }
+      ]
+    },
+    {
+      "location": "Bordeaux — Centre / Saint-Pierre",
+      "emoji": "🍷",
+      "places": [
+        {
+          "name": "Le Petit Commerce",
+          "address": "22 Rue Parlement Saint-Pierre, 33000 Bordeaux",
+          "phone": "+33 5 56 79 76 58",
+          "cuisine": "Seafood",
+          "notes": "Bordeaux institution. Unbeatable freshness — oysters, shellfish, grilled fish. Market dishes paired with Bordeaux wines. One of the best seafood restaurants in France.",
+          "status": "walkin",
+          "closedOn": ""
+        },
+        {
+          "name": "Soif",
+          "address": "Saint-Pierre district, Bordeaux",
+          "phone": "",
+          "cuisine": "Wine bar with food",
+          "notes": "350-strong wine list, artisanal vintners. A gem in the Saint-Pierre district. Open Monday & Friday evenings, Saturday–Sunday lunch and dinner.",
+          "status": "walkin",
+          "closedOn": "Closed Tuesday–Thursday"
+        },
+        {
+          "name": "Amicis",
+          "address": "Bordeaux centre",
+          "phone": "",
+          "cuisine": "Modern French / seafood",
+          "notes": "Rated 16/20 by Gault&Millau, 3 toques. Chef Alexandre Baumard — charcuterie-style red tuna, seaweed Saint-Pierre. Refined yet accessible.",
+          "status": "walkin",
+          "closedOn": ""
+        },
+        {
+          "name": "Le Charabia",
+          "address": "Hôtel de Ville area, Bordeaux",
+          "phone": "",
+          "cuisine": "Natural wine bar / small plates",
+          "notes": "Buzzing local bistro. Smart small plates — pork pithivier with artichoke, mushroom arancini with beetroot ketchup. All organic wines from local makers. Eighties soundtrack, large terrace in summer.",
+          "status": "walkin",
+          "closedOn": ""
+        }
+      ]
     }
   ]
 };
@@ -1002,15 +1184,102 @@ function DayView({ day }) {
 const ALL_TRIPS = [TRIP_DATA];
 
 const NAV_TABS = [
-  { id: "itinerary", label: "Itinerary" },
-  { id: "hotels",    label: "Hotels" },
-  { id: "flights",   label: "Flights" },
-  { id: "contacts",  label: "Contacts" },
+  { id: "itinerary",   label: "Itinerary" },
+  { id: "hotels",      label: "Hotels" },
+  { id: "flights",     label: "Flights" },
+  { id: "restaurants", label: "Restaurants" },
+  { id: "contacts",    label: "Contacts" },
 ];
 
 const CONTACT_CATEGORY_ICONS = {
   hotel: "🏨", dining: "🍽️", culture: "🎨", shopping: "🛍️", transport: "🚆"
 };
+
+function RestaurantsPanel({ trip }) {
+  const [openIdx, setOpenIdx] = useState(null);
+  const STATUS_COLORS = {
+    confirmed: { bg: "#d8f3dc", color: "#2d6a4f", dot: "#52b788", label: "Confirmed" },
+    walkin:    { bg: "#fef3c7", color: "#7b4f12", dot: "#d97706", label: "Walk-in" },
+    book:      { bg: "#fde8e8", color: "#9b2335", dot: "#e53e3e", label: "Book" },
+  };
+  return (
+    <div style={{ padding: "16px 0" }}>
+      {(trip.restaurants || []).map((group, gi) => (
+        <div key={gi} style={{ marginBottom: 28 }}>
+          <div style={{
+            fontSize: 11, fontWeight: 800, letterSpacing: "0.14em",
+            textTransform: "uppercase", color: "#B8860B",
+            fontFamily: "Georgia, serif", marginBottom: 12,
+            display: "flex", alignItems: "center", gap: 8
+          }}>
+            <span>{group.emoji}</span> {group.location}
+          </div>
+          {group.places.map((place, pi) => {
+            const key = `${gi}-${pi}`;
+            const isOpen = openIdx === key;
+            const sc = STATUS_COLORS[place.status] || STATUS_COLORS.walkin;
+            return (
+              <div
+                key={pi}
+                onClick={() => setOpenIdx(isOpen ? null : key)}
+                style={{
+                  background: isOpen ? "#fffdf7" : "#fff",
+                  border: `1px solid ${isOpen ? "#B8860B" : "#e8e0d0"}`,
+                  borderRadius: 10, padding: "12px 14px",
+                  marginBottom: 8, cursor: "pointer",
+                  transition: "all 0.15s ease",
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+                      <span style={{ fontSize: 14, fontWeight: 700, color: "#1B2A4A", fontFamily: "'Playfair Display', Georgia, serif" }}>
+                        {place.name}
+                      </span>
+                      <span style={{
+                        fontSize: 10, fontWeight: 700, letterSpacing: "0.07em",
+                        textTransform: "uppercase", padding: "2px 8px", borderRadius: 20,
+                        background: sc.bg, color: sc.color, fontFamily: "Georgia, serif",
+                        display: "inline-flex", alignItems: "center", gap: 4, flexShrink: 0
+                      }}>
+                        <span style={{ width: 5, height: 5, borderRadius: "50%", background: sc.dot, display: "inline-block" }} />
+                        {sc.label}
+                      </span>
+                    </div>
+                    <div style={{ fontSize: 11, color: "#888", marginTop: 3, fontFamily: "Georgia, serif", fontStyle: "italic" }}>
+                      {place.cuisine}
+                    </div>
+                  </div>
+                  <span style={{ color: "#ccc", fontSize: 10, marginTop: 2 }}>{isOpen ? "▲" : "▼"}</span>
+                </div>
+                {isOpen && (
+                  <div style={{ marginTop: 10, paddingTop: 10, borderTop: "1px solid #f0e8d0" }}>
+                    <div style={{ fontSize: 12, color: "#666", marginBottom: 6, fontFamily: "Georgia, serif", fontStyle: "italic" }}>
+                      📍 {place.address}
+                    </div>
+                    {place.phone && (
+                      <div style={{ fontSize: 12, color: "#B8860B", marginBottom: 6, fontFamily: "Georgia, serif" }}>
+                        📞 {place.phone}
+                      </div>
+                    )}
+                    {place.closedOn && (
+                      <div style={{ fontSize: 11, color: "#e53e3e", marginBottom: 6, fontFamily: "Georgia, serif" }}>
+                        ⏰ {place.closedOn}
+                      </div>
+                    )}
+                    <div style={{ fontSize: 13, color: "#333", lineHeight: 1.65, fontFamily: "Georgia, serif" }}>
+                      {place.notes}
+                    </div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      ))}
+    </div>
+  );
+}
 
 function ContactsPanel({ trip }) {
   const cats = ["hotel","dining","culture","shopping"];
@@ -1249,10 +1518,11 @@ function TripDetail({ trip, onBack }) {
       )}
 
       <div style={{ padding: "16px 16px 80px" }}>
-        {activeTab === "hotels"    && <HotelsPanel trip={trip} />}
-        {activeTab === "flights"   && <FlightsPanel trip={trip} />}
-        {activeTab === "contacts"  && <ContactsPanel trip={trip} />}
-        {activeTab === "itinerary" && <DayView day={trip.days[activeDay]} />}
+        {activeTab === "hotels"      && <HotelsPanel trip={trip} />}
+        {activeTab === "flights"     && <FlightsPanel trip={trip} />}
+        {activeTab === "restaurants" && <RestaurantsPanel trip={trip} />}
+        {activeTab === "contacts"    && <ContactsPanel trip={trip} />}
+        {activeTab === "itinerary"   && <DayView day={trip.days[activeDay]} />}
       </div>
     </div>
   );
