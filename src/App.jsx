@@ -53,7 +53,7 @@ const TRIP_DATA = {
       "date": "Tue 30 Jun",
       "label": "DAY 1",
       "title": "Arrive Paris",
-      "summary": "Land at CDG mid-morning, settle into the Marriott, take the Champs-Élysées at your own pace. Dinner downstairs — no effort, no taxi.",
+      "summary": "Land at CDG mid-morning, settle into the Marriott, take the Champs-Élysées at your own pace. A first scout of La Grande Épicerie in the late afternoon for room snacks and reconnaissance. Dinner downstairs — no effort, no taxi.",
       "items": [
         {
           "time": "10:55",
@@ -74,6 +74,15 @@ const TRIP_DATA = {
           "status": null,
           "category": "hotel",
           "transit": "🏨 at hotel"
+        },
+        {
+          "time": "~17:00",
+          "emoji": "🛍️",
+          "title": "La Grande Épicerie — first visit",
+          "address": "38 Rue de Sèvres, 75007 Paris",
+          "notes": "First visit is reconnaissance and snacks for the room. Explore the full floor — note what you want to bring home. Lavender syrup, Espelette shortbread, preserves, artisan chocolate. VAT refund over €100. 15 min taxi from hotel.",
+          "status": "walkin",
+          "transit": "🚕 15 min taxi"
         },
         {
           "time": "19:00",
@@ -339,6 +348,15 @@ const TRIP_DATA = {
           "transit": "🚶 5 min walk"
         },
         {
+          "time": "~14:30",
+          "emoji": "💎",
+          "title": "L'École Van Cleef & Arpels — Daniel Brush Exhibition",
+          "address": "Hôtel de Mercy-Argenteau, 16 bis Boulevard Montmartre, 75009",
+          "notes": "Free admission — book timed entry at tickets.lecolevancleefarpels.com. 75+ jewels and objects by American artist-goldsmith Daniel Brush. Pure gold, steel, diamonds — feels more like sculpture than jewellery. One piece is literally called 'Thinking About Monet' — extraordinary resonance after Giverny yesterday. Open Tue-Sun 11am-7pm. Closed Jul 5-10, so this is your window. Allow 1 hr.",
+          "status": "book",
+          "transit": "🚕 15 min taxi from Orangerie"
+        },
+        {
           "time": "~15:30",
           "emoji": "🚶",
           "title": "Marais wander",
@@ -356,6 +374,15 @@ const TRIP_DATA = {
           "notes": "Old-world French beauty culture. Extraordinary packaging. Feels like a discovery rather than a shop. 20-30 mins.",
           "status": "optional",
           "category": "shopping",
+          "transit": "🚶 in Marais"
+        },
+        {
+          "time": "~17:00",
+          "emoji": "🌿",
+          "title": "Herbéus — Aromatherapy & Botanicals",
+          "address": "58 Rue du Temple, 75004 (corner of Rambuteau & Temple)",
+          "notes": "One of the best herbalist shops in Paris. Extensive range of essential oils, medicinal plants, aromatic remedies — and uniquely, crystals and minerals alongside the botanicals. Founder has run it since 2003, personally there at weekends. Open 7 days 10am-8pm. Feels like a discovery rather than a shop.",
+          "status": "walkin",
           "transit": "🚶 in Marais"
         },
         {
@@ -460,7 +487,7 @@ const TRIP_DATA = {
           "emoji": "🚆",
           "title": "TGV Paris → Bordeaux — TGV INOUI 8485",
           "address": "Gare Montparnasse → Gare Saint-Jean, Bordeaux (arrive 17:42)",
-          "notes": "Booking XT4QC8. 1st Class. Coach 2 — Anjali Seat 208 (E-ticket 489703191), Abhijeet Seat 207 (E-ticket 358908461). Allow 30 mins travel to station + 30 mins before departure. Depart hotel by 13:00.",
+          "notes": "Booking XT4QC8. 1st Class. Coach 2 — Anjali Seat 208 (E-ticket 489703191), Abhijeet Seat 207 (E-ticket 358908461). Depart hotel by 13:00. Arrives Bordeaux 17:42.",
           "status": "confirmed",
           "category": "transport",
           "transit": "🚕 15 min taxi to Montparnasse",
@@ -806,6 +833,27 @@ const TRIP_DATA = {
       "phone": null,
       "category": "hotel",
       "note": "Ref 34759SG135930 — Jul 7–8. Check-in after 15:00."
+    },
+    {
+      "name": "L'École Van Cleef & Arpels — Daniel Brush Exhibition",
+      "address": "Hôtel de Mercy-Argenteau, 16 bis Blvd Montmartre, 75009",
+      "phone": "+33 1 70 70 38 40",
+      "category": "culture",
+      "note": "Free. Book at tickets.lecolevancleefarpels.com. Open Tue-Sun 11am-7pm. Closed Jul 5-10."
+    },
+    {
+      "name": "Herbéus — Aromatherapy & Botanicals",
+      "address": "58 Rue du Temple, 75004 Paris (corner Rambuteau & Temple)",
+      "phone": null,
+      "category": "shopping",
+      "note": "Open 7 days 10am-8pm. Essential oils, medicinal plants, crystals."
+    },
+    {
+      "name": "The Harmonist — Perfume Flagship",
+      "address": "36 Avenue George V, 75008 Paris",
+      "phone": "+33 1 53 75 19 92",
+      "category": "shopping",
+      "note": "Feng Shui-based fragrance house. Personalized consultation available."
     }
   ],
   "restaurants": [
