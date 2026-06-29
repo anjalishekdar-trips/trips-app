@@ -352,8 +352,8 @@ const TRIP_DATA = {
           "emoji": "💎",
           "title": "L'École Van Cleef & Arpels — Daniel Brush Exhibition",
           "address": "Hôtel de Mercy-Argenteau, 16 bis Boulevard Montmartre, 75009",
-          "notes": "Free admission — book timed entry at tickets.lecolevancleefarpels.com. 75+ jewels and objects by American artist-goldsmith Daniel Brush. Pure gold, steel, diamonds — feels more like sculpture than jewellery. One piece is literally called 'Thinking About Monet' — extraordinary resonance after Giverny yesterday. Open Tue-Sun 11am-7pm. Closed Jul 5-10, so this is your window. Allow 1 hr.",
-          "status": "book",
+          "notes": "Confirmed: timed entry 2:30-3:00pm, General admission. 75+ jewels and objects by American artist-goldsmith Daniel Brush. Pure gold, steel, diamonds — feels more like sculpture than jewellery. One piece is literally called 'Thinking About Monet' — extraordinary resonance after Giverny yesterday. Metro line 8/9 to Grands Boulevards. Allow 30-45 min for the visit itself.",
+          "status": "confirmed",
           "transit": "🚕 15 min taxi from Orangerie"
         },
         {
@@ -1163,6 +1163,72 @@ const TRIP_DATA = {
           "category": "🍷 Wine"
         }
       ]
+    },
+    {
+      "location": "French Pharmacy — any pharmacie",
+      "address": "Look for the green cross sign — they're everywhere",
+      "emoji": "💊",
+      "note": "French pharmacy skincare is genuinely cheaper here than in the US, and some brands aren't sold there at all. Stock up.",
+      "items": [
+        {
+          "name": "La Roche-Posay Anthelios UVMUNE 400",
+          "notes": "Their best sunscreen, not always available in the US in this formulation.",
+          "category": "☀️ Sunscreen"
+        },
+        {
+          "name": "Bioderma Sensibio H2O",
+          "notes": "The original micellar water — cheaper here than anywhere else.",
+          "category": "🧴 Skincare"
+        },
+        {
+          "name": "Caudalie",
+          "notes": "Grape-derived skincare, French pharmacy favourite.",
+          "category": "🧴 Skincare"
+        },
+        {
+          "name": "Avène Thermal Spring Water",
+          "notes": "Soothing spray, good for sensitive skin and travel.",
+          "category": "🧴 Skincare"
+        },
+        {
+          "name": "Nuxe Rêve de Miel Lip Balm",
+          "notes": "Cult favourite honey lip balm.",
+          "category": "💋 Lip care"
+        },
+        {
+          "name": "Uriage / Vichy / SVR / Rilastil",
+          "notes": "All well-regarded French pharmacy brands, generally cheaper than US prices.",
+          "category": "🧴 Skincare"
+        }
+      ]
+    },
+    {
+      "location": "Bakery / Boulangerie — anywhere good",
+      "address": "Pick up at any quality boulangerie or La Grande Épicerie",
+      "emoji": "🍪",
+      "note": "Classic French cookies that travel well and make great gifts.",
+      "items": [
+        {
+          "name": "Beurre Bordier",
+          "notes": "Widely considered the best butter in France, even better than standard French butter. Comes in flavoured varieties too (seaweed, smoked). Vacuum-sealed and frozen, it travels home fine and customs-authorized.",
+          "category": "🧈 Butter"
+        },
+        {
+          "name": "Sablés Bretons",
+          "notes": "Thick, buttery Breton shortbread — different from the Basque Espelette version. Classic, simple, excellent.",
+          "category": "🍪 Cookies"
+        },
+        {
+          "name": "Madeleines",
+          "notes": "Small shell-shaped sponge cakes, best fresh but good versions are sold packaged for travel.",
+          "category": "🍪 Cookies"
+        },
+        {
+          "name": "Macarons",
+          "notes": "If not from Ladurée, look for a good local pâtisserie — often better value and just as good.",
+          "category": "🍬 Sweet"
+        }
+      ]
     }
   ]
 };
@@ -1709,18 +1775,19 @@ function TripDetail({ trip, onBack }) {
           </div>
         </div>
 
-        <div style={{ display: "flex", gap: 4 }}>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
           {NAV_TABS.map(tab => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               style={{
-                padding: "5px 14px", borderRadius: 20, border: "none", cursor: "pointer",
-                fontSize: 11, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase",
+                padding: "5px 11px", borderRadius: 20, border: "none", cursor: "pointer",
+                fontSize: 10, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase",
                 fontFamily: "Georgia, serif",
                 background: activeTab === tab.id ? accent : "rgba(255,255,255,0.1)",
                 color: activeTab === tab.id ? "#fff" : "rgba(255,255,255,0.55)",
                 transition: "all 0.15s ease",
+                whiteSpace: "nowrap",
               }}
             >
               {tab.label}
